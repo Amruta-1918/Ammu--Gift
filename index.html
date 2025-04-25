@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gift for Ammu</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- Particles.js Background -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+  <!-- Confetti Library -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+  <!-- Animated Particles Background -->
+  <div id="particles-js"></div>
+
+  <!-- Background Music -->
+  <audio id="bgMusic" src="bg-music.mp3" autoplay loop></audio>
+
+  <div class="container">
+
+    <!-- Tagline -->
+    <div class="tagline" id="tagline">
+      Click karo… Ammu gift pe 🎁
+    </div>
+
+    <!-- Gift Box -->
+    <div class="gift-box" onclick="openGift()">
+      <img id="giftImage" src="giftbox.png" alt="Gift Box" />
+    </div>
+
+    <!-- Message (typing effect) -->
+    <div class="message" id="message">
+      <h1 id="message-title" style="display: none;">🎉 Congratulations Ammu! 🎉</h1>
+      <p id="typed-message" data-text="Hamesha aise hi grow karti raho, Ammu! 🌸 Tumhare saare sapne poore ho, aur zindagi har mod pe khushiyon se bhari ho 💫 Tumhara jazba, muskurahat aur mehnat ek din sab kuch jeet le jayegi 💖 Kabhi rukna mat... kyunki tum special ho! 🦋"></p>
+    </div>
+
+
+
+    <!-- Surprise Voice Note -->
+    <audio id="voiceNote" src="surprise-voice.mp3"></audio>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
